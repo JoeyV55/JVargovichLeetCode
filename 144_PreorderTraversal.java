@@ -1,3 +1,6 @@
+//Difficulty: Medium
+//Solve date: 6/24/2020
+
 /**
  * Definition for a binary tree node.
  * public class TreeNode {
