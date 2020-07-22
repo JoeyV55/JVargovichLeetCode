@@ -13,19 +13,14 @@ class Solution {
             if(isLeftChar(s.charAt(i)))
                 currentChars.push(s.charAt(i));
             else if(!isMatchingChar(currentChars, s.charAt(i)))
-               return false;                 
-            
-            
-        }
-            
+               return false; 
+        }           
         return currentChars.empty();
     }
-    
-    
+  
     public boolean isLeftChar(char currentChar){
         return currentChar == '(' || currentChar == '[' || currentChar == '{';  
     }
-    
                     
     public boolean isMatchingChar(Stack<Character> charStack, char currentChar){
         if(!charStack.isEmpty()){
@@ -40,5 +35,4 @@ class Solution {
         }
         return false;
     }
-    
 }
