@@ -2,16 +2,16 @@
 
 import java.util.HashSet;
 
-public class Main {
+public class isUnique {
 
     public static void main(String[] args) {
 	 String inputFalse = "ffld"; //False, duplicate character
      String inputTrue = "field"; //True, no duplicate characters.
-     System.out.println(isUnique(inputFalse));
-     System.out.println(isUnique(inputTrue));
+     System.out.println(isUniqueRunner(inputFalse));
+     System.out.println(isUniqueRunner(inputTrue));
     }
 
-    public static boolean isUnique(String inputStr){
+    public static boolean isUniqueRunner(String inputStr){
         HashSet<Character> characterSet = new HashSet<>();
         for(int index = 0; index < inputStr.length(); index++){
             if(!characterSet.add(inputStr.charAt(index))){
